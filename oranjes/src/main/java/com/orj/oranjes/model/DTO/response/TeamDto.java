@@ -15,4 +15,8 @@ public class TeamDto {
 
     private String name;
     private List<PlayerDto> players;
+
+    public void addPlayerDto(PlayerDto playerDto) {
+        this.players.add(playerDto);
+    }
 }
