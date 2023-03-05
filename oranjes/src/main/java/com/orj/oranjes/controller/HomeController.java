@@ -8,12 +8,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
-    public String getHome() {
+    public String getHomePage() {
         return "index";
     }
 
     @RequestMapping(value = "/2percenta", method = RequestMethod.GET)
-    public String getMore() {
+    public String getMorePage() {
         return "2percenta";
+    }
+
+    @RequestMapping(value = "/sponsoring", method = RequestMethod.GET)
+    public String getSponsoringPage() {
+        return "sponsoring";
     }
 }
