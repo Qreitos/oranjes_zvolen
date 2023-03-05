@@ -1,5 +1,5 @@
 # Oranjes Zvolen
-Web page for football team Oranjes Zvolen. My job is create backend for this web.
+Web page for football team Oranjes Zvolen. My job is to create backend for this web.
 
 ![OranjesWeb](https://img.tpx.cz/uploads/oranjes1678100573.png "Oranjes Zvolen")
 
