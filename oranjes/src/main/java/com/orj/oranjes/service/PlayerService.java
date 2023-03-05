@@ -29,4 +29,8 @@ public class PlayerService {
     public Player getPlayerByTeam(Team team) {
         return playerRepository.getPlayerByTeam(team);
     }
+
+    public void savePlayer(Player player) {
+        playerRepository.save(player);
+    }
 }
