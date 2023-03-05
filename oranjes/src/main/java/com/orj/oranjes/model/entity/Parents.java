@@ -13,7 +13,8 @@ import java.util.UUID;
 public class Parents {
 
     @Id
-    private UUID id = UUID.randomUUID();
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private String mother_name;
     private String mother_address;
     private String mother_email;

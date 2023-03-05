@@ -14,7 +14,8 @@ import java.util.UUID;
 public class Team {
 
     @Id
-    private UUID id = UUID.randomUUID();
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private String name;
 
     @OneToMany

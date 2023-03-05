@@ -1,5 +1,6 @@
 package com.orj.oranjes.service;
 
+import com.orj.oranjes.model.entity.Team;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import com.orj.oranjes.model.DTO.response.PlayerDto;
@@ -14,7 +15,7 @@ public class PlayerService {
 
     private final PlayerRepository playerRepository;
 
-    public PlayerDto getDto(Player player) {
+    public PlayerDto transferPlayerToDto(Player player) {
 
         PlayerDto playerDto = new PlayerDto();
         playerDto.setName(player.getName());
@@ -23,5 +24,9 @@ public class PlayerService {
         playerDto.setNumber(player.getNumber());
 
         return playerDto;
+    }
+
+    public Player getPlayerByTeam(Team team) {
+        return playerRepository.getPlayerByTeam(team);
     }
 }

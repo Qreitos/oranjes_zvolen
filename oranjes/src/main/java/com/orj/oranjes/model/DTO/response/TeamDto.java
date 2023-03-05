@@ -1,6 +1,5 @@
 package com.orj.oranjes.model.DTO.response;
 
-import com.orj.oranjes.model.DTO.request.PlayerDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,11 +11,8 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AllPlayerDto {
+public class TeamDto {
 
-    private List<PlayerDto> allPlayers;
-
-    public void fillPlayersList() {
-
-    }
+    private String name;
+    private List<PlayerDto> players;
 }
