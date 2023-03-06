@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx"><!-- InstanceBegin template="/Templates/sablona.dwt" codeOutsideHTMLIsLocked="false" -->
+<html class="no-js" lang="zxx" xmlns:th="http://www.thymeleaf.org/"><!-- InstanceBegin template="/Templates/sablona.dwt" codeOutsideHTMLIsLocked="false" -->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -61,7 +61,7 @@
 									<ul>
 										<li><a href="https://www.facebook.com/akademiaoranjes" target="_blank" class="active"><i class="fa fa-facebook"></i></a></li>
                                       <li><a href="https://www.youtube.com/channel/UC6hVYbIMw3MrUlDgovA1fzQ#" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
-                                      <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                      <li><a href="https://www.instagram.com/oranjeszvolen/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 									</ul>
 								</nav>
 							</div>
@@ -73,7 +73,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-sm-12 col-xs-12 logo">
-                            <a href="/index.html"><img src="images/logo.png" alt="logo"></a>
+                            <a href="/home"><img src="images/logo.png" alt="logo"></a>
                         </div>
                         <div class="col-md-10 col-sm-12 col-xs-12 mobile-menu">
                             <div class="main-menu">
@@ -81,13 +81,13 @@
                                 <nav class="rs-menu">
                                     <ul class="nav-menu">
                                         <!-- Home -->
-                                        <li><a href="index.html">Úvod</a></li>
+                                        <li><a href="/home">Úvod</a></li>
                                         <!-- End Home -->
                                         <!-- Klub -->
-                                        <li><a href="about.html">O klube</a></li>
+                                        <li><a href="/about">O klube</a></li>
                                         <!-- End Klub -->
                                         <!-- Treneri -->
-                                        <li><a href="coachteam.html">Tréneri</a></li>
+                                        <li><a href="/coach">Tréneri</a></li>
                                         <!-- End Treneri -->
                                         <!-- Timy -->
                                         <li class="menu-item-has-children">
@@ -104,16 +104,16 @@
                                         </li>
                                         <!-- End Timy -->
                                         <!-- Aktuality -->
-                                      <li><a href="aktuality.html">Novinky</a></li>
+                                      <li><a href="/news">Novinky</a></li>
                                         <!-- End Aktuality -->
                                         <!-- Media
                                       <li><a href="../media.html">Média</a></li>
                                              End Media -->
                                         <!-- Fanshop -->
-                                        <li><a href="shop.html">Fan Shop</a></li>
+                                        <li><a href="/shop">Fan Shop</a></li>
                                         <!-- End Fanshop -->
                                         <!-- Contact -->
-                                        <li><a href="contact.html">Kontakt</a></li>
+                                        <li><a href="/contact">Kontakt</a></li>
                                         <!-- End Contact -->
                                     </ul>
                                </nav>
@@ -199,7 +199,7 @@
                                 <!-- COUNTER-LIST START -->
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="rs-counter-list">
-                                        <h2 class="rs-counter percent">14</h2>   
+                                        <h2 class="rs-counter percent" th:text="${playerCount}">14</h2>
                                         <h3>Počet Hráčov</h3>
                                     </div>
                                 </div>
@@ -318,16 +318,16 @@
                             <h4 class="footer-title">Užitočné Linky</h4>
                             <ul class="sitemap-widget">
                                 <li class="active"><a href="about.html">Všetko o klube</a></li>
-                                <li><a href="coachteam.html">Kolektív trénerov</a></li>
-                                <li><a href="aktuality.html">Aktuality</a></li>
-                                <li><a href="contact.html">Kontakt</a></li>
+                                <li><a href="/coach">Kolektív trénerov</a></li>
+                                <li><a href="/news">Aktuality</a></li>
+                                <li><a href="/contact">Kontakt</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3">
                             <h4 class="footer-title">Podporte Nás</h4>
                             <ul class="sitemap-widget">
                                 <li class="active"><li><a href="2percenta.html">2% z dane </a></li>
-                                <li><a href="sponsoring.html">Sponzoring</a></li>
+                                <li><a href="/sponsoring">Sponzoring</a></li>
                                 <li><a href="pdf/prihlaska%20ORANJES%20Zvolen.pdf" target="_blank">Prihláška do klubu</a></li>
                             </ul>
                         </div>
@@ -356,7 +356,7 @@
                                     <ul>
                                         <li><a href="https://www.facebook.com/akademiaoranjes" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="https://www.youtube.com/channel/UC6hVYbIMw3MrUlDgovA1fzQ#" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.instagram.com/oranjeszvolen/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>                                
                             </div>

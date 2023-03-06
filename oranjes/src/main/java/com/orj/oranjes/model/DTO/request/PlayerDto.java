@@ -1,4 +1,4 @@
-package com.orj.oranjes.model.DTO.response;
+package com.orj.oranjes.model.DTO.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

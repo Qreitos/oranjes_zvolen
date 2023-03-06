@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -14,7 +15,7 @@ import java.util.List;
 public class TeamDto {
 
     private String name;
-    private List<PlayerDto> players;
+    private List<PlayerDto> players = new ArrayList<>();
 
     public void addPlayerDto(PlayerDto playerDto) {
         this.players.add(playerDto);

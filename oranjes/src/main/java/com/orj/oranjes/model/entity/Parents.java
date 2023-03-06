@@ -2,12 +2,14 @@ package com.orj.oranjes.model.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
 @Getter
+@Setter
 @Table
 @NoArgsConstructor
 public class Parents {
